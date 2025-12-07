@@ -1,0 +1,6 @@
+{
+  "max_drawdown": 0.2,
+  "stop_loss_pct": 0.02,
+  "take_profit_pct": 0.04,
+  "max_trades_per_day": 100
+}

@@ -1,0 +1,62 @@
+{
+    "api": {
+        "base_url": "https://api.btcturk.com/api/v2",
+        "websocket_url": "wss://ws-feed.btcturk.com",
+        "api_key": "",
+        "secret_key": "",
+        "test_mode": true
+    },
+    "trading": {
+        "trading_enabled": true,
+        "symbols": ["BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT"],
+        "max_position_size": 0.1,
+        "risk_per_trade": 0.005,
+        "max_daily_loss": 0.05,
+        "max_weekly_loss": 0.15,
+        "stop_loss_pct": 0.02,
+        "take_profit_pct": 0.04,
+        "slippage_tolerance": 0.001,
+        "commission_rate": 0.001,
+        "min_trade_amount": 250.0,
+        "max_trade_amount": 10000.0,
+        "update_interval": 1000
+    },
+    "strategy": {
+        "scalping_enabled": true,
+        "scalping_profit_target": 0.005,
+        "scalping_stop_loss": 0.003,
+        "scalping_timeframe": "1m",
+        "grid_enabled": true,
+        "grid_levels": 10,
+        "grid_spacing": 0.01,
+        "grid_profit_target": 0.02,
+        "trend_enabled": true,
+        "trend_ma_periods": [20, 50, 200],
+        "trend_momentum_threshold": 0.02,
+        "hedge_enabled": false,
+        "correlation_threshold": 0.7,
+        "hedge_ratio": 0.5
+    },
+    "database": {
+        "type": "sqlite",
+        "sqlite_path": "data/trading_bot.db",
+        "postgresql_url": "",
+        "trades_table": "trades",
+        "market_data_table": "market_data",
+        "signals_table": "signals",
+        "performance_table": "performance"
+    },
+    "logging": {
+        "level": "INFO",
+        "file_path": "logs/trading_bot.log",
+        "max_file_size": 10485760,
+        "backup_count": 5,
+        "console_output": true
+    },
+    "gui": {
+        "theme": "dark",
+        "window_size": [1200, 800],
+        "refresh_interval": 1000,
+        "chart_candles": 1000
+    }
+}

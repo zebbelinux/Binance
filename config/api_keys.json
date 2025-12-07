@@ -1,0 +1,28 @@
+{
+    "load_balancing_strategy": "round_robin",
+    "failover_enabled": true,
+    "rate_limit_buffer": 1.0,
+    "api_keys": [
+        {
+            "name": "primary",
+            "api_key": "2a2d1f96-7b9e-476f-8ba3-b6681b8c6ae8",
+            "secret_key": "J8/CO71+ghyGhiL9kU9OuRA9MlR3RgI7",
+            "daily_limit": 1000,
+            "max_errors": 5
+        },
+        {
+            "name": "secondary",
+            "api_key": "",
+            "secret_key": "",
+            "daily_limit": 1000,
+            "max_errors": 5
+        },
+        {
+            "name": "backup",
+            "api_key": "",
+            "secret_key": "",
+            "daily_limit": 1000,
+            "max_errors": 5
+        }
+    ]
+}
